@@ -1,0 +1,38 @@
+{% extends 'common.html' %}
+{% load static %}
+
+{% block title %}
+Авторизация
+{% endblock %}
+
+
+  {% block content %}
+
+ <div class="form login row justify-content-md-center">
+   <div class="col-sm-6 login-form">
+     <h1 class="adv-heading">Авторизация с биометрией</h1>
+       <hr class="hrstyled"/>
+      <div class="video-block">
+            <img src="{% static 'images/face-contur.png' %}" style="position: absolute;height: 240px;">
+            <video id="video" width="320" height="240" class="snapshot-item"  autoplay></video>
+     </div>
+       <button id="snap" class="btn green" style="display:none;">Сделать снимок</button>
+      <canvas id="canvas" width="320" height="240" class="snapshot-item" style="display:none;"></canvas>
+      <h5 style="text-align:center;">Расположите лицо внутри контура во время авторизации</h5>
+    <form action="{% url 'login' %}" enctype="multipart/form-data" method="POST">
+        {% csrf_token %}
+         <div class="input-item"><span class="item-label">Логин</span>{{form.username}}</div>
+     <div class="input-item"><span class="item-label">Пароль</span>{{form.password}}</div>
+       <!--  <label>
+         <input type="checkbox" checked="checked" name="remember" > Запомнить меня
+        </label> -->
+        {{ form.hiddenimage.as_hidden }}
+        <div class="btn-submit"><button id="login-submit" type="submit" class="btn green form-btn" >Войти</button></div>
+    </form>
+
+     </div>
+ </div>
+
+   <script src="{% static 'js/video-snapshot.js' %}"></script>
+
+{% endblock %}

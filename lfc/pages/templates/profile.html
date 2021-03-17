@@ -1,0 +1,25 @@
+{% extends 'common.html' %}
+{% load static %}
+
+{% block title %}
+Аккаунт
+{% endblock %}
+
+
+  {% block content %}
+ <h1 style="margin:20px 0;text-align:center;">Профиль киберспортсмена {{ user.username}}</h1>
+<hr class="hrstyled"/>
+ <div class="row justify-content-md-center" style="margin:20px 0;">
+      <div class="col-xs-12 col-md-3 reg-left">
+          <h5>Ваша фотография</h5>
+           <img src="{{ user.userprofile.head_shott}}" style="width:100%">
+      </div>
+      <div class="col-xs-12 col-md-4 reg-right" style="">
+          <h6>Личные данные:</h6>
+        <div>Имя: {{ user.first_name}}</div>
+          <div>Фамилия: {{ user.last_name }}</div>
+          <div>Email: {{ user.email }}</div>
+      </div>
+</div>
+
+{% endblock %}

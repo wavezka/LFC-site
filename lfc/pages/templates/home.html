@@ -1,0 +1,137 @@
+{% extends 'common.html' %}
+{% load static %}
+
+{% block title %}
+Главная
+{% endblock %}
+
+
+  {% block content %}
+  <div class="row home-block">
+            <div class="col-sm-12 col-lg-7 align-self-center"><img src="{% static 'images/esportsman.jpg' %}" style="width:100%"></div>
+            <div class="col-sm-12 col-lg-5 align-self-center">
+                <div class="home-about">
+                    <h1 >LFC - Lawyers For Cybersport</h1>
+
+                    <p><span style="color:#EDAB4A;">Компания LFC</span> занимается сопровождением киберспортсмена в юридической сфере, направленный на помощь в правовом регулировании его деятельности.</p>
+          <strong>Мы предлагаем Вам следующие возможности:</strong>
+          <ul>
+              <li>
+                  Помощь в выборе договора между киберспортивной организацией и спорсменом.
+              </li>
+               <li>
+                  Юридическое сопровождение с начала действия договора до его окончания.
+              </li>
+               <li>
+                  Помощь в урегулировании конфликтов между киберспортсменами и организации.
+              </li>
+          </ul>
+                </div>
+
+            </div>
+  </div>
+<div class="home-block">
+    <h2 class="home-adv__heading" >Наши преимущества</h2>
+    <hr class="hrstyled"/>
+<div class="row">
+    <div class="col-sm-6 col-lg-3">
+        <div class="adv-item">
+            <div class="adv-item__header">
+                <img src="{% static 'images/support.svg' %}" alt="">
+                <p>Круглосуточная поддержка</p>
+            </div>
+            <div class="adv-item__body">
+                У клиентов есть возможность воспользоваться услугами наших юристов онлайн, при помощи чата.
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+        <div class="adv-item">
+            <div class="adv-item__header">
+                <img src="{% static 'images/technology.svg' %}" alt="">
+                <p>Современные решения</p>
+            </div>
+            <div class="adv-item__body">
+               Наши юристы следят за киберспортивной индустрией и предлагают своевременные решения.
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+        <div class="adv-item">
+            <div class="adv-item__header">
+                <img src="{% static 'images/lawyer.svg' %}" alt="">
+                <p>Большой опыт</p>
+            </div>
+            <div class="adv-item__body">
+                Нам интересны те ситуации, для решение которых понадобится креативность и нестандартные подходы.
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+        <div class="adv-item">
+            <div class="adv-item__header">
+                <img src="{% static 'images/individual.svg' %}" alt="">
+                <p>Индивидуальный подход</p>
+            </div>
+            <div class="adv-item__body">
+                Каждый должен заниматься любимым делом. Играйте и выигрывайте, а мы будем Вашим надежным юридическим тылом.
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="home-block why">
+    <h2 class="home-adv__heading" >Почему вам нужен юрист?</h2>
+    <hr class="hrstyled"/>
+    <div class="row justify-content-md-center">
+         <div class="col-sm-9">
+             <div class="row article">
+                 <div class="col-lg-5 align-self-center">
+                      <img src="{% static 'images/article1.jpg' %}" alt="">
+                 </div>
+                 <div class="col-lg-7">
+                     <span>Девушки в киберспорте также сталкиваться с обманом</span>
+                     <p>
+                         Бывший капитан женской команды Besiktas Esports по League of Legends Николь Wolf Сольвмосе рассказала, что организация полгода задерживает зарплату команде. Сумма задолженности составляет более €40 тыс. (~₽3,3 млн). Информацию об этом девушка опубликовала в TwitLonger...
+                     </p>
+                 </div>
+             </div>
+         </div>
+         <div class="col-sm-9">
+             <div class="row article">
+                 <div class="col-lg-5 align-self-center">
+                      <img src="{% static 'images/article2.jpg' %}" alt="">
+                 </div>
+                 <div class="col-lg-7">
+                     <span>Команда Arcade eSports подала в суд на игрока Иван «Gorec»</span>
+                     <p>
+                         Летом 2015 года известный игрок в Dota 2 Иван «Gorec» Картанков перешёл в Arcade eSports. При трансфере был подписан договор, по которому он должен был выступать за организацию на протяжении 3 месяцев с возможностью продления этого срока.
+                     </p>
+                     <p>Но уже к августу всё того же 2015 Иван нарушил несколько условий договора, такие как например: отсутствие на ...</p>
+                 </div>
+             </div>
+         </div>
+         <div class="col-sm-9">
+             <div class="row article">
+                 <div class="col-lg-5 align-self-center">
+                      <img src="{% static 'images/article3.jpg' %}" alt="">
+                 </div>
+                 <div class="col-lg-7">
+                     <span>Команда MVP задерживает выплаты призовых</span>
+                     <p>
+                        По словам бывшего тренера состава MVP по Apex Legends Чой Сок Вона организация недобросовестно относится к законным выплатам игрокам, что выражалось в систематических задержках и негативно сказывалось на моральном духе команд,а это в свою очередь напрямую влияло на их турнирные результаты...
+                     </p>
+                 </div>
+             </div>
+         </div>
+     </div>
+    <div class="btn-more cblock">
+        <a href="/blog" class="btn green">Читать далее</a>
+    </div>
+</div>
+<div class="home-block contact">
+    <h2 class="home-adv__heading" >Как с нами связаться?</h2>
+    <p style="text-align:center">!Блок с обратной формой связи!</p>
+</div>
+{% endblock %} 

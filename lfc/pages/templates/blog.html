@@ -1,0 +1,58 @@
+{% extends 'common.html' %}
+{% load static %}
+
+{% block title %}
+Блог
+{% endblock %}
+
+  {% block content %}
+<div class="home-block why">
+    <h1 class="home-adv__heading" >Блог</h1>
+    <hr class="hrstyled"/>
+    <div class="row justify-content-md-center">
+         <div class="col-sm-9">
+             <div class="row article">
+                 <div class="col-lg-5 align-self-center">
+                      <img src="{% static 'images/article1.jpg' %}" alt="">
+                 </div>
+                 <div class="col-lg-7">
+                     <span>Девушки в киберспорте также сталкиваться с обманом</span>
+                     <p>
+                         Бывший капитан женской команды Besiktas Esports по League of Legends Николь Wolf Сольвмосе рассказала, что организация полгода задерживает зарплату команде. Сумма задолженности составляет более €40 тыс. (~₽3,3 млн). Информацию об этом девушка опубликовала в TwitLonger...
+                     </p>
+                 </div>
+             </div>
+         </div>
+         <div class="col-sm-9">
+             <div class="row article">
+                 <div class="col-lg-5 align-self-center">
+                      <img src="{% static 'images/article2.jpg' %}" alt="">
+                 </div>
+                 <div class="col-lg-7">
+                     <span>Команда Arcade eSports подала в суд на игрока Иван «Gorec»</span>
+                     <p>
+                         Летом 2015 года известный игрок в Dota 2 Иван «Gorec» Картанков перешёл в Arcade eSports. При трансфере был подписан договор, по которому он должен был выступать за организацию на протяжении 3 месяцев с возможностью продления этого срока.
+                     </p>
+                     <p>Но уже к августу всё того же 2015 Иван нарушил несколько условий договора, такие как например: отсутствие на ...</p>
+                 </div>
+             </div>
+         </div>
+         <div class="col-sm-9">
+             <div class="row article">
+                 <div class="col-lg-5 align-self-center">
+                      <img src="{% static 'images/article3.jpg' %}" alt="">
+                 </div>
+                 <div class="col-lg-7">
+                     <span>Команда MVP задерживает выплаты призовых</span>
+                     <p>
+                        По словам бывшего тренера состава MVP по Apex Legends Чой Сок Вона организация недобросовестно относится к законным выплатам игрокам, что выражалось в систематических задержках и негативно сказывалось на моральном духе команд,а это в свою очередь напрямую влияло на их турнирные результаты...
+                     </p>
+                 </div>
+             </div>
+         </div>
+     </div>
+    <div class="btn-more cblock">
+        <a href="#" class="btn green">Показать еще</a>
+    </div>
+</div>
+{% endblock %}
